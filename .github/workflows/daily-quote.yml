@@ -1,0 +1,66 @@
+name: Daily Quote
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-quote:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Update README quote
+        run: |
+          python3 - <<'PY'
+          import datetime
+          import re
+
+          quotes = [
+              "重启能解决 90% 的问题，剩下的 10% 交给星辰。",
+              "服务器没崩，是我先崩了。",
+              "我的 KPI 是让服务器相信：它不会挂。",
+              "别人的诗和远方，我的诗和 uptime。",
+              "星海很远，先把这个告警处理了。",
+              "我的头发和服务器一样，都需要做冗余备份。",
+              "宕机不可怕，可怕的是宕机时我在出差。",
+              "我爱运维，运维爱我，就像磁盘爱满。",
+              "深夜的告警，比闹钟更懂我。",
+              "宇宙的尽头是铁岭，运维的尽头是重启。",
+          ]
+
+          today = datetime.date.today()
+          quote = quotes[today.toordinal() % len(quotes)]
+
+          with open("README.md", encoding="utf-8") as f:
+              content = f.read()
+
+          new_content = re.sub(
+              r"(<!-- QUOTE:START -->).*?(<!-- QUOTE:END -->)",
+              lambda m: m.group(1) + "\n> " + quote + "\n" + m.group(2),
+              content,
+              flags=re.S,
+          )
+
+          with open("README.md", "w", encoding="utf-8") as f:
+              f.write(new_content)
+
+          print("Today's quote:", quote)
+          PY
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          if git diff --staged --quiet; then
+            echo "No change, skip."
+          else
+            git commit -m "chore: update daily quote"
+            git push origin HEAD:${{ github.event.repository.default_branch }}
+          fi
