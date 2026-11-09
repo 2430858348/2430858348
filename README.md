@@ -5,7 +5,7 @@
 <div align="center">
 
 <!-- QUOTE:START -->
-> 深夜的告警，比闹钟更懂我。
+> 宇宙的尽头是铁岭，运维的尽头是重启。
 <!-- QUOTE:END -->
 
 </div>
