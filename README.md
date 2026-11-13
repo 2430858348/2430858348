@@ -5,7 +5,7 @@
 <div align="center">
 
 <!-- QUOTE:START -->
-> 我的 KPI 是让服务器相信：它不会挂。
+> 别人的诗和远方，我的诗和 uptime。
 <!-- QUOTE:END -->
 
 </div>
