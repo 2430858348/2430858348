@@ -5,7 +5,7 @@
 <div align="center">
 
 <!-- QUOTE:START -->
-> 别人的诗和远方，我的诗和 uptime。
+> 星海很远，先把这个告警处理了。
 <!-- QUOTE:END -->
 
 </div>
