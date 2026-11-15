@@ -5,7 +5,7 @@
 <div align="center">
 
 <!-- QUOTE:START -->
-> 星海很远，先把这个告警处理了。
+> 我的头发和服务器一样，都需要做冗余备份。
 <!-- QUOTE:END -->
 
 </div>
