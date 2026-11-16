@@ -5,7 +5,7 @@
 <div align="center">
 
 <!-- QUOTE:START -->
-> 我的头发和服务器一样，都需要做冗余备份。
+> 宕机不可怕，可怕的是宕机时我在出差。
 <!-- QUOTE:END -->
 
 </div>
