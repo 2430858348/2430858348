@@ -5,7 +5,7 @@
 <div align="center">
 
 <!-- QUOTE:START -->
-> 重启能解决 90% 的问题，剩下的 10% 交给星辰。
+> 服务器没崩，是我先崩了。
 <!-- QUOTE:END -->
 
 </div>
