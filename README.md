@@ -5,7 +5,7 @@
 <div align="center">
 
 <!-- QUOTE:START -->
-> 服务器没崩，是我先崩了。
+> 我的 KPI 是让服务器相信：它不会挂。
 <!-- QUOTE:END -->
 
 </div>
