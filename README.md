@@ -5,7 +5,7 @@
 <div align="center">
 
 <!-- QUOTE:START -->
-> 宕机不可怕，可怕的是宕机时我在出差。
+> 我爱运维，运维爱我，就像磁盘爱满。
 <!-- QUOTE:END -->
 
 </div>
