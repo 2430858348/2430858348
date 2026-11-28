@@ -5,7 +5,7 @@
 <div align="center">
 
 <!-- QUOTE:START -->
-> 我爱运维，运维爱我，就像磁盘爱满。
+> 深夜的告警，比闹钟更懂我。
 <!-- QUOTE:END -->
 
 </div>
